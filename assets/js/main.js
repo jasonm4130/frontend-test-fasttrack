@@ -1,6 +1,17 @@
 $( function() {
     // Init Datepicker
     $( "#datepicker" ).datepicker();
+
+    // Match Height for Panels
+    $('.panel').matchHeight({
+        byRow: false
+    });
+
+    $(window).on('resize', function(){
+        // Update Match Height on Resize
+        $.fn.matchHeight._update();
+  });
+
 } );
 
 // Map

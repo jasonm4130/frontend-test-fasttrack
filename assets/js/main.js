@@ -8,8 +8,13 @@ $( function() {
     });
 
     $(window).on('resize', function(){
-        // Update Match Height on Resize
-        $.fn.matchHeight._update();
+        // Update Match Height on Resize (Remove the previous binding then re bind, probably a better way of doing this)
+        $('.panel').matchHeight({
+            remove: true
+        });
+        $('.panel').matchHeight({
+            byRow: false
+        });
   });
 
 } );

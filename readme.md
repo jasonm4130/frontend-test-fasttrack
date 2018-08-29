@@ -8,5 +8,7 @@ Sass was used as a preprocessor for the css files. Keeping everything nice and t
 
 I included bootstrap reboot and grid as helpers to speed development as well as jquery ui css for the datpicker styles.
 
+I took a mobile first aproach to the minimal media queries needed.
+
 ## JS
-Using jquery UI framework for 
+Using jquery UI framework for the datepicker, and jquery match height to dynamically match the height of the panels/boxes.
